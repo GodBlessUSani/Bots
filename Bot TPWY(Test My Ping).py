@@ -21,16 +21,16 @@ try:
     socket.create_connection(('Google.com', 80))
     if os.path.exists('Final Message') is True:
         with open('Final Message.txt', 'a') as w:
-            w.write("\n \nYour ping is %s:" % lines[28], )
-            w.write("\nWith the packet loss of %s:" % lines[24])
+            w.write("\n \nYour ping is %s" % lines[28], )
+            w.write("\nWith the packet loss of %s" % lines[24])
             w.write("\n")
             w.write(str(date))
             w.write('\n \n')
             w.write('-' * 100)
     elif os.path.exists('Final Message') is False:
         with open('Final Message.txt', 'w') as w:
-            w.write("\nYour ping is %s:" % lines[28], )
-            w.write("\nWith the packet loss of %s:\n" % lines[24])
+            w.write("\nYour ping is %s" % lines[28], )
+            w.write("\nWith the packet loss of %s\n" % lines[24])
             w.write("\n")
             w.write(str(date))
             w.write('\n \n')
